@@ -60,7 +60,20 @@ def calculator(er, skal):
         return False
     
         
-    
-    
-        
+def check_if_zero(er, skal):
+    if skal == 0:
+        print("Brann spjeld liste mangler verdi")
+    elif er == 0:
+        print("Ingen verdier i liste fra OneCo eller ikke programert") 
+    else:
+        return False
 
+def check_if_cav(decription):
+    if "CAV" in decription.upper():
+        return "CAV"
+    elif "VAV" in decription.upper():
+        return "VAV"
+    else:
+        return "Ukjent type spjeld"
+  
+    
