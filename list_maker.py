@@ -55,25 +55,22 @@ def calculator(er, skal):
         differanse = (er / skal) * 100
 
     if differanse >= 90:
-        return True
-    else:
         return False
+    else:
+        return f"Er {round(er, 2)} m3/h skal ha {round(skal, 2)} m3/h"
     
         
 def check_if_zero(er, skal):
     if skal == 0:
-        print("Brann spjeld liste mangler verdi")
+        return "Brann spjeld liste mangler verdi"
     elif er == 0:
-        print("Ingen verdier i liste fra OneCo eller ikke programert") 
+        return "Ingen verdier i liste fra OneCo eller ikke programert"
     else:
         return False
 
-def check_if_cav(decription):
-    if "CAV" in decription.upper():
-        return "CAV"
-    elif "VAV" in decription.upper():
-        return "VAV"
-    else:
-        return "Ukjent type spjeld"
+
+    
+# def check_vav(er, skal):
+
   
     
